@@ -10,7 +10,7 @@ return {
   default_config = {
     cmd = cmd,
     filetypes = { 'python' },
-    root_dir = find_git_ancestor(fname) or vim.loop.os_homedir(),
+    root_dir = util.find_git_ancestor(fname) or vim.loop.os_homedir(),
     single_file_support = true,
   },
   docs = {
